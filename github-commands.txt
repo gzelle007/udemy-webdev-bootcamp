@@ -1,6 +1,11 @@
-GitHub Notes
+GITHUB NOTES FOR MAC
 
-Beginner Terminal Commands
+
+----------
+
+TERMINAL COMMANDS
+
+NAVIGATION AND FOLDER EDITING CODES
 
 cd                   home directory
 cd [foldername]      change directory
@@ -9,11 +14,34 @@ cd /                 root of drive
 
 ls                   short list
 ls -l                long list
-ls -a                list icluding hidden files
+ls -a                list including hidden files
 
-mkdir                create new directory
-mkdir -p             create nested directory
-rmdir [foldername]   remove empty directory
-rm -R[forldername]   remove directory and its contents
+mkdir                new folder
+mkdir -p             create nested folder
+rmdir [foldername]   remove empty folder
+rm -R[forldername]   remove folder and its contents
 
 reset                resets terminal display
+
+
+----------
+
+TERMINAL CONFIGURATIONS
+
+GIT VERSIONS
+
+git --version           Find out which version of git is installed
+
+
+DETAILS ASSOCIATED WITH YOUR EDITS
+
+git config --global user.name "Gizelle"                     Name used in GitHub for users know who has made the edit
+git config --global.email "emailaddress@provider.com"       email address you have used in GitHub account
+
+
+
+
+
+
+
+
