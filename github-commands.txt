@@ -7,6 +7,8 @@ TERMINAL COMMANDS
 
 NAVIGATION AND FOLDER EDITING CODES
 
+-- file names are case sensitive
+
 cd                   home directory
 cd [foldername]      change directory
 cd ~/[foldername]/   home directory
@@ -36,12 +38,18 @@ git --version           Find out which version of git is installed
 DETAILS ASSOCIATED WITH YOUR EDITS
 
 git config --global user.name "Gizelle"                     Name used in GitHub for users know who has made the edit
-git config --global.email "emailaddress@provider.com"       email address you have used in GitHub account
+git config --global user.email "emailaddress@provider.com"       email address you have used in GitHub account
 
 
+----------
 
+GIT REPOSITORY
 
+NEW REPOSITORY    1. cd /[yourfolder]
+                  2. git init
 
+CLONE REPOSITORY  1. git clone [url code]
+                                https://github.com/gzelle007/udemy-webdev-bootcamp.git
+                  2. cd [foldername]
 
-
-
+STATUS            git status
