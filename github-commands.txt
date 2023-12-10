@@ -1,0 +1,19 @@
+GitHub Notes
+
+Beginner Terminal Commands
+
+cd                   home directory
+cd [foldername]      change directory
+cd ~/[foldername]/   home directory
+cd /                 root of drive
+
+ls                   short list
+ls -l                long list
+ls -a                list icluding hidden files
+
+mkdir                create new directory
+mkdir -p             create nested directory
+rmdir [foldername]   remove empty directory
+rm -R[forldername]   remove directory and its contents
+
+reset                resets terminal display
