@@ -62,4 +62,4 @@ PUSH EDITS        git add [filename]                     - stages file to be upd
 
                   git push origin main                   - push commit changes - will require login credential authentication
 
-PULL EDITS        git pull origin main                   - downloads upto date source code
+PULL EDITS        git pull origin main                   - downloads up to date source code
