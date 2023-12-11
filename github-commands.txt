@@ -56,10 +56,10 @@ STATUS            git status
                     -- files in red                      - edits made but not saved on GitHub
                     git diff [filename in red]           - explains the changes made
 
-EDITS             git add [filename]                     - stages file to be updated on GitHub
+PUSH EDITS        git add [filename]                     - stages file to be updated on GitHub
                   git commit -m "Description of commit"  - commit changes, (m) message with description of edit
                   git log --oneline                      - log of commit
 
                   git push origin main                   - push commit changes - will require login credential authentication
 
-                  
+PULL EDITS        git pull origin main                   - downloads upto date source code
