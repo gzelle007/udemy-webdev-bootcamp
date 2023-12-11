@@ -53,7 +53,13 @@ CLONE REPOSITORY  1. git clone [url code]
                   2. cd [foldername]
 
 STATUS            git status
-                    -- files in red                   - edits made but not saved on GitHub
-                    git diff [filename in red]        - explains the changes made
+                    -- files in red                      - edits made but not saved on GitHub
+                    git diff [filename in red]           - explains the changes made
 
-EDITS             git add [filename]
+EDITS             git add [filename]                     - stages file to be updated on GitHub
+                  git commit -m "Description of commit"  - commit changes, (m) message with description of edit
+                  git log --oneline                      - log of commit
+
+                  git push origin main                   - push commit changes - will require login credential authentication
+
+                  
