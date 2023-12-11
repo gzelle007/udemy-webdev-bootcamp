@@ -53,3 +53,7 @@ CLONE REPOSITORY  1. git clone [url code]
                   2. cd [foldername]
 
 STATUS            git status
+                    -- files in red                   - edits made but not saved on GitHub
+                    git diff [filename in red]        - explains the changes made
+
+EDITS             git add [filename]
