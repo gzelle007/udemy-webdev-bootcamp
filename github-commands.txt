@@ -63,3 +63,7 @@ PUSH EDITS        git add [filename]                     - stages file to be upd
                   git push origin main                   - push commit changes - will require login credential authentication
 
 PULL EDITS        git pull origin main                   - downloads up to date source code
+                  git pull origin main --rebase          - conflicting pull including changes online and local
+
+PULL CONFLICTS    git rebase --abort                     - aborts all changes on rebase
+                  git rebase --skip                      - continue with rebase and ignore conflict
