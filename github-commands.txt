@@ -67,3 +67,6 @@ PULL EDITS        git pull origin main                   - downloads up to date 
 
 PULL CONFLICTS    git rebase --abort                     - aborts all changes on rebase
                   git rebase --skip                      - continue with rebase and ignore conflict
+
+BRANCHES          git branch                             - branch checker. Can be on master or * named branch
+                  git checkout -b [new-branch-name]      - create new branch and checkout
