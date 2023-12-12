@@ -4,26 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+    <style>
+      div {
+        background-color: honeydew;
+      }
+    </style>
   </head>
   <body>
     <!--Form-->
     <!--CSS inline styling-->
     <h2 style="font-size: 2.5em">Contact Us</h2>
-    <form method="get" action="">
-      <!--input can be multiple types, ie, password, checkbox-->
-      <input required type="text" placeholder="Enter your name" />
-      <input type="checkbox" />
-      <input
-        required
-        name="email"
-        type="email"
-        placeholder="Enter your email address"
-      />
-      <!--Whitespace matters in message area-->
-      <textarea name="" id="" cols="30" rows="10">Message</textarea>
 
-      <!---->
-      <button type="submit">SEND</button>
-    </form>
+    <div>
+      <form method="get" action="">
+        <!--input can be multiple types, ie, password, checkbox-->
+        <input required type="text" placeholder="Enter your name" />
+        <input type="checkbox" />
+        <input
+          required
+          name="email"
+          type="email"
+          placeholder="Enter your email address"
+        />
+        <!--Whitespace matters in message area-->
+        <textarea name="" id="" cols="30" rows="10">Message</textarea>
+
+        <!---->
+        <button type="submit">SEND</button>
+      </form>
+    </div>
   </body>
 </html>
