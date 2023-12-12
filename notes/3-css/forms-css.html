@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+
+    <!-- Internal CSS -->
+    <style>
+      /* Comment in CSS quick key is [cmd /] */
+
+      /* Element selector */
+      h2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      div {
+        background-color: honeydew;
+      }
+
+      /* Class selector */
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .singleselector {
+        color: midnightblue;
+      }
+
+      /* ID selector */
+      #the-title {
+        text-decoration: underline;
+        font-size: 1.8em;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      #divstyle {
+        background-color: blanchedalmond;
+      }
+
+      /* Group selector */
+      h2,
+      h4 {
+        color: deeppink;
+      }
+
+      /* Selecting nested elements */
+      p strong {
+        color: blueviolet;
+      }
+
+      /* Styling different link states */
+
+      button {
+        padding: 10px 20px;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(15, 212, 203);
+        color: white;
+        cursor: grab;
+      }
+
+      button:hover {
+        background-color: rgb(56, 132, 207);
+      }
+
+      button:active {
+        background-color: rgb(39, 71, 144);
+        transform: translateY(2px);
+      }
+    </style>
+  </head>
+  <body>
+    <!--Form-->
+    <!--CSS inline styling-->
+    <h1>Figma Headquarters</h1>
+    <p>Floor 10 760 Market Street San Francisco CA94102, USA</p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1547065782474!2d-122.40802638865185!3d37.78641401137269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808898972ae7%3A0x640214c40548f155!2sPhelan%20Building%2C%20760%20Market%20St%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2snz!4v1702347459987!5m2!1sen!2snz"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!--id should only be one as it can affect javascript later down the track-->
+    <div id="divstyle">
+      <!--class can be applied to multiple-->
+      <h3 class="singleselector uppercase" id="the-title">Our values</h3>
+      <h4 class="singleselector">Core beliefs</h4>
+      <p class="singleselector">
+        <strong>Selected nested element.</strong> Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Omnis, ullam eaque. Nemo impedit et
+        dolorem eveniet odit dolorum, molestiae nobis quia porro, ab sit harum
+        rem velit reiciendis, qui in.
+      </p>
+
+      <strong>This element will NOT be selected in the nested element</strong>
+    </div>
+
+    <h2 style="font-size: 2.5em">Contact Us</h2>
+    <h4>We would love to hear from you</h4>
+
+    <div>
+      <form method="get" action="">
+        <!--input can be multiple types, ie, password, checkbox-->
+        <input required type="text" placeholder="Enter your name" />
+        <input type="checkbox" />
+        <input
+          required
+          name="email"
+          type="email"
+          placeholder="Enter your email address"
+        />
+        <!--Whitespace matters in message area-->
+        <textarea name="" id="" cols="30" rows="10">Message</textarea>
+
+        <!---->
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+  </body>
+</html>
