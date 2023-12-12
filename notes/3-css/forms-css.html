@@ -19,6 +19,16 @@
       .singleselector {
         color: midnightblue;
       }
+
+      #the-title {
+        text-decoration: underline;
+        font-size: 1.8em;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      #divstyle {
+        background-color: blanchedalmond;
+      }
     </style>
   </head>
   <body>
@@ -37,13 +47,17 @@
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
 
-    <h3 class="singleselector uppercase">Our values</h3>
-    <h4 class="singleselector">Our core beliefs</h4>
-    <p class="singleselector">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ullam
-      eaque. Nemo impedit et dolorem eveniet odit dolorum, molestiae nobis quia
-      porro, ab sit harum rem velit reiciendis, qui in.
-    </p>
+    <!--id should only be one as it can affect javascript later down the track-->
+    <div id="divstyle">
+      <!--class can be applied to multiple-->
+      <h3 class="singleselector uppercase" id="the-title">Our values</h3>
+      <h4 class="singleselector">Core beliefs</h4>
+      <p class="singleselector">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ullam
+        eaque. Nemo impedit et dolorem eveniet odit dolorum, molestiae nobis
+        quia porro, ab sit harum rem velit reiciendis, qui in.
+      </p>
+    </div>
 
     <h2 style="font-size: 2.5em">Contact Us</h2>
     <h4>We would love to hear from you</h4>
