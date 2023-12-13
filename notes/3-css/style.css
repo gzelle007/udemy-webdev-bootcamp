@@ -3,3 +3,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#logo-homelink{
+    text-align: center;
+    color: #ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+}
