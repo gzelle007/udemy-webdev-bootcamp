@@ -1,22 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
 body {
+    margin: 0px;
+    padding: 0px;
     background-image: url(images/edho-pratama-T6fDN60bMWY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#logo-homelink{
-    display: inline;
+#logo-homelink {
+    margin: 0; padding: 10px;
+    display: block;
+    height: 80px;
     text-align: center;
     color: #fff;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.tester {
+#menu-nav {
+    padding: 0; margin: 0;
+    list-style-type: none;
+    /* border: 1px solid red; */
+}
+
+#menu-nav li {
+    display: inline;
+    padding: 10px 25px;
+    background-color: #888;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 5px 5px 20px #000;
+}
+
+/* .tester {
     display: block;
     border: 1px solid red;
     width: 100px;
     height: 100px;
     position: 100px 50px;
-}
+} */
 
