@@ -5,7 +5,23 @@ body {
 }
 
 #logo-homelink{
+    display: inline;
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     font-family:Arial, Helvetica, sans-serif;
 }
+
+.tester {
+    display: block;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    position: 100px 50px;
+}
+
+*:not(path):not(g) {
+    color: hsla(210, 100%, 100%, 0.9) !important;
+    background: hsla(210, 100%, 50%, 0.5) !important;
+    outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+    box-shadow: none !important;
+    }

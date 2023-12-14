@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+body{
+
+}
+
+.block-box {
+    display: block;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    position: 100px 50px;
+}
+
+.inline-box {
+    display: inline;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    position: 100px 50px;
+}
+
+.inline-block-box {
+    display: inline-block;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    position: 100px 50px;
+}
+
+*:not(path):not(g) {
+    color: hsla(210, 100%, 100%, 0.9) !important;
+    background: hsla(210, 100%, 50%, 0.5) !important;
+    outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+    box-shadow: none !important;
+    }
