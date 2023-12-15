@@ -49,8 +49,9 @@ body {
   /* border: 1px solid blue; */
 }
 
-/* Static image */
+/* Static image banner*/
 
 .static-img {
   width: 100%;
+  position: relative;
 }
