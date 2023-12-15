@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tester</title>
     <style>
-        .block-box {
-    display: block;
-    border: 1px solid red;
-    width: 100px;
-    height: 100px;
-    position: 100px 50px;
-}
+      .block-box {
+        display: block;
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        position: 100px 50px;
+      }
 
-.inline-box {
-    display: inline;
-    border: 1px solid red;
-    width: 100px;
-    height: 100px;
-    position: 100px 50px;
-}
+      .inline-box {
+        display: inline;
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        position: 100px 50px;
+      }
 
-.inline-block-box {
-    display: inline-block;
-    border: 1px solid red;
-    width: 100px;
-    height: 100px;
-    position: 100px 50px;
-}
+      .inline-block-box {
+        display: inline-block;
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        position: 100px 50px;
+      }
+
+      .this-box {
+        border: 1px solid blue;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+      }
+
+      .that-box {
+        border: 1px solid blue;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+
+      .that-box-too {
+        border: 1px solid blue;
+        width: 300px;
+        height: 300px;
+        padding: 30px;
+        box-sizing: content-box;
+        outline: 3px solid black;
+        outline-offset: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Testing display box</h1>
+    <ol>
+      <li>BOX ONE = display: block;</li>
+      <li>ONE BOX = display: inline;</li>
+      <li>XO 1 OX = display: inline-block</li>
+    </ol>
 
     <div class="block-box">BOX ONE</div>
     <div class="block-box">BOX TWO</div>
@@ -40,6 +71,68 @@
 
     <div class="inline-block-box">OX 1 XO</div>
     <div class="inline-block-box">OX 2 XO</div>
-    
-</body>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+
+    <h2>Understanding box model</h2>
+    <p>Box sizes can vary depending on the browser and its rules.</p>
+
+    <pre>
+        .this-box {
+            border: 1px solid blue;
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+          }
+
+    </pre>
+    <div class="this-box">THIS BOX</div>
+    <p>
+      Though has height and width of 300px, overall size will be 662px x 662px
+      due to padding added and border added
+    </p>
+    <br />
+
+    <p>-----------</p>
+    <pre>
+        .that-box {
+            border: 1px solid blue;
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            box-sizing: border-box;
+          }
+    </pre>
+    <p>
+      "box-sizing: border-box;" tells preview to make overall size to the stated
+      height and width of 300px x 300px
+    </p>
+    <div class="that-box">THAT BOX</div>
+    <br /><br />
+
+    <p>-----------</p>
+    <pre>
+        .that-box-too {
+            border: 1px solid blue;
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            <strong>box-sizing: content-box;
+            outline: 3px solid black;
+            outline-offset: 10px;</strong>
+          }
+    </pre>
+
+    <p>
+      Note codes in bold above. Outline is not included in size and can also be
+      stated to be offset.
+    </p>
+    <div class="that-box-too">THAT BOX TOO</div>
+
+    <br /><br />
+    <hr />
+    <br /><br />
+  </body>
 </html>
