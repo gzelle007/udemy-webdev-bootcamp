@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  background-color: #fdf6ed;
+}
+
+/* Navigation Menu */
+
+#nav-container {
+  padding: 20px;
+  margin: 0;
+  /* display: inline-flex;
+  position: absolute; */
+  width: 100%;
+  background-color: #fff;
+}
+
+#nav-logo {
+  display: inline-block;
+}
+
+#nav-logo img {
+  padding: 20px;
+  border: 1px solid purple;
+  /* background-image: url(images/seafari-logo.png) no-repeat; */
+  width: 200px;
+}
+
+#nav-list {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style-type: none;
+  /* border: 1px solid red; */
+}
+
+#nav-container {
+  display: inline-block;
+}
+
+#nav-list li {
+  padding: 20px;
+  font-weight: 100;
+  font-size: 1.5em;
+  display: inline-block;
+  border: 1px solid blue;
+}
